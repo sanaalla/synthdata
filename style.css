@@ -1,0 +1,41 @@
+body {
+    background-color: #ffe8e8;
+    margin-left:15%;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 800%;
+    color: #3b4264;
+}
+p{
+    font-size: 130%;
+    color: #393939;
+font-family: 'Roboto Slab', serif;
+}
+
+
+button {
+    font-size: 300%;
+    color: #ffe8e8;
+        font-family: 'Rajdhani', sans-serif;
+    padding: 20px;
+
+}
+.playbuttons button {
+    background-color: #c1c1c1;
+}
+ .mainbuttons button {
+    background-color: #3b4264;
+     margin-left: 1%;
+}
+
+
+.allbuttons {
+float: left;
+}
+
+
+.mainstop, .stop {
+    padding-top:1%;
+}
