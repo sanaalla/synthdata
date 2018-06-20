@@ -18,19 +18,19 @@
     <p>The sound you hear is data from meteorite landings. One oscillator represents the year in which the meteorite landed, increasing in pitch; the other oscillator's pitch is determined by the mass of the meteorite.</p>
     
     <div class="allbuttons">
-    <div class="playbuttons"><button onclick="osc2.start();">year sound</button><button onclick="osc1.start();">mass sound</button>
+    <div class="playbuttons"><button id="yearbutton" onclick="osc2.start();">year sound</button><button id="massbutton" onclick="osc1.start();">mass sound</button>
  <div class="stop"><button onclick="osc1.stop();osc2.stop();">stop</button></div></div>
     
         </div>
         
         <div class="mainbuttons">
         
-        <button onclick="autoplay=true;osc1.start();
-osc2.start();">play meteorite data</button>
+        <button id="mainplaybutton" onclick="playbutton()">play meteorite data</button>
       
             <div class="mainstop">
 <button onclick="autoplay=false;osc1.stop();
 osc2.stop();">stop</button></div>
+	    <div id="showmassindex"></div>
         
 <!--<div class="slidecontainer">
   <input type="range" min="mass_min;year_min;" max="mass_max;year_max;" value="50" class="slider" id="myRange">

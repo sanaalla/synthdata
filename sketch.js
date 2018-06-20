@@ -96,7 +96,10 @@ playNote(data.get(index, 'Mass_index'), 0, osc1, mass_min, mass_max);
    playNote(data.get(index, 'Year'), 400, osc2, year_min, year_max);
       
     var vol = map(data.get(index, 'Mass_index'), mass_min, mass_max, 1, 3.0);
-    console.log(vol)
+    
+
+    document.getElementById("yearbutton").innerHTML = "year " + data.get(index,'Year');
+    document.getElementById("massbutton").innerHTML = "mass " + data.get(index,'Mass_index');
           
 
       
@@ -121,4 +124,15 @@ playNote(data.get(index, 'Mass_index'), 0, osc1, mass_min, mass_max);
     osc1.stop()
     osc2.stop()
   }
+}
+
+function playbutton(){
+	autoplay=!autoplay;
+	osc1.start(); 
+	osc2.start();
+	if ( document.getElementById("mainplaybutton").innerHTML === "pause meteorite data"){
+		document.getElementById("mainplaybutton").innerHTML = "play meteorite data";
+	}else{
+		document.getElementById("mainplaybutton").innerHTML = "pause meteorite data";
+	}
 }
