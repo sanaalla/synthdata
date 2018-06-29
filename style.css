@@ -27,7 +27,9 @@ button {
 }
  .mainbuttons button {
     background-color: #3b4264;
-     margin-left: 1%;
+}
+.mainbuttons {
+    margin-bottom: 3%;
 }
 
 
