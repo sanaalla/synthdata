@@ -123,9 +123,13 @@ function playbutton(){
 	autoplay=!autoplay;
 	osc1.start(); 
 	osc2.start();
-	if ( document.getElementById("mainplaybutton").innerHTML === "pause meteorite data"){
-		document.getElementById("mainplaybutton").innerHTML = "play meteorite data";
+	if ( document.getElementById("mainplaybutton").innerHTML === "pause data loop"){
+		document.getElementById("mainplaybutton").innerHTML = "play data loop";
 	}else{
-		document.getElementById("mainplaybutton").innerHTML = "pause meteorite data";
+		document.getElementById("mainplaybutton").innerHTML = "pause data loop";
 	}
 }
+
+
+
+

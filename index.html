@@ -15,23 +15,25 @@
         <h1>Meteorite Landings <br>Sonification Project</h1>
     <p>The sound you hear is data from meteorite landings. One oscillator represents the year in which the meteorite landed, increasing in pitch; the other oscillator's pitch is determined by the mass of the meteorite.</p>
    
-            <div class="mainbuttons">
+    <div class="omgbuttons">
+    <div class="mainbuttons">
         
-        <button id="mainplaybutton" onclick="playbutton()">play meteorite data</button>
+        <button id="mainplaybutton" onclick="playbutton()">play data loop</button>
       
-            <div class="mainstop">
-<button onclick="autoplay=false;osc1.stop();
-osc2.stop();">stop</button></div>
-	    <div id="showmassindex"></div>
-
         </div>
+    
+    
     <div class="allbuttons">
     <div class="playbuttons"><button id="yearbutton" onclick="osc2.start();">year sound</button><button id="massbutton" onclick="osc1.start();">mass sound</button>
- <div class="stop"><button onclick="osc1.stop();osc2.stop();">stop</button></div></div>
-    
-        </div>
+ </div>
+ 
         
+        </div>
+            <div class="mainstop">
+<button onclick="autoplay=false;osc1.stop();
+osc2.stop();">stop sound</button></div>
 
    </div>
+    </div>      
     </body>
 </html>

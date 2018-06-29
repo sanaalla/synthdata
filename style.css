@@ -32,12 +32,19 @@ button {
     margin-bottom: 3%;
 }
 
-
-.allbuttons {
+.mainstop button {
+        background-color: #3b4264;
+}
+.mainstop {
 float: left;
 }
 
 
-.mainstop, .stop {
-    padding-top:1%;
+.allbuttons {
+float: left;
+    margin-right: 900px;
+margin-bottom: 2%;    
+}
+
+.omgbuttons {
 }
